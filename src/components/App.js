@@ -1,6 +1,8 @@
 import React from 'react';
 import { CssBaseline } from '@material-ui/core';
 import { Characters } from './cards/Characters';
+import { Header } from './Header';
+import { Nav } from './Nav';
 
 export default function App() {
   const charsEx = [
@@ -26,6 +28,8 @@ export default function App() {
   return (
     <>
       <CssBaseline />
+      <Header />
+      <Nav />
       <Characters characters={charsEx} handleClick={handleClick} />
     </>
   );
