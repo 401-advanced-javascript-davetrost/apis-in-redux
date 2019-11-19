@@ -1,12 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<main
-  className="Main"
->
+<BrowserRouter>
   <CssBaseline />
   <Header />
   <Nav />
-  <CharactersContainer />
-</main>
+  <Switch>
+    <Route
+      path="/avatar"
+    >
+      <CharactersContainer />
+    </Route>
+    <Route
+      path="/simpsons"
+    >
+      <h2>
+        simpsons
+      </h2>
+    </Route>
+    <Route
+      path="/"
+    >
+      <CharactersContainer />
+    </Route>
+  </Switch>
+</BrowserRouter>
 `;
