@@ -21,7 +21,7 @@ export const Header = () => {
           API Central!
         </Typography>
         <Typography variant="h4" gutterBottom>
-          brought to you by: Redux
+          brought to you by: React, Redux & Material UI
         </Typography>
       </header>
     </div>
