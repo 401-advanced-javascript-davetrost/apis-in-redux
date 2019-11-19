@@ -1,5 +1,4 @@
 import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -15,14 +14,7 @@ const LinkTab = props => (
   />
 );
 
-// const useStyles = makeStyles(() => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-// }));
-
 export const NavTabs = () => {
-  // const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
