@@ -1,0 +1,11 @@
+.Character {
+  border: 10px;
+  border-color: black;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.CardHeader {
+  background-color: #94948bcc;
+}
