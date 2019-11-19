@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
 import styles from './NavTabs.css';
 import { useHistory, useLocation } from 'react-router-dom';
+import { ROUTER_LOCATIONS } from './App';
 
 const LinkTab = props => (
   <Tab
@@ -12,13 +13,6 @@ const LinkTab = props => (
     {...props}
   />
 );
-
-const ROUTER_LOCATIONS = {
-  0: '/avatar',
-  1: '/simpsons',
-  '/avatar': 0,
-  '/simpsons': 1,
-};
 
 export const NavTabs = () => {
   const [value, setValue] = useState(0);
