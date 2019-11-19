@@ -29,5 +29,5 @@ Characters.propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func
 };
