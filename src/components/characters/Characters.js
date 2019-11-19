@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Grid } from '@material-ui/core';
 import { Character } from './Character';
+import styles from './Characters.css';
 
 export const Characters = ({ characters, handleClick }) => {
   const characterEles = characters.map(character => (
@@ -14,11 +15,16 @@ export const Characters = ({ characters, handleClick }) => {
   ));
 
   return (
-    <Container maxWidth="md">
-      <Grid container spacing={3}>
-        {characterEles}
-      </Grid>
-    </Container>    
+    <div className={styles.Characters} >
+      <div className={styles.BackgroundImage}>
+        <img src="https://live.staticflickr.com/1901/45574031691_c042f9794c_b.jpg" />
+      </div>
+      <Container maxWidth="md">
+        <Grid container spacing={3}>
+          {characterEles}
+        </Grid>
+      </Container>    
+    </div>
   );
 };
 

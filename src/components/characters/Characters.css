@@ -1,0 +1,14 @@
+.Characters {
+  position: relative;
+}
+
+.BackgroundImage {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  
+  img {
+    width: 100vw;
+    height: 150vh;
+  }
+}
