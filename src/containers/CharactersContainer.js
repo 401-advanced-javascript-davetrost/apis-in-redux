@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Loading } from '../components/Loading';
 import { Characters } from '../components/characters/Characters';
 import { getCharacters, getCharactersLoading } from '../selectors/charactersSelectors';
-import { fetchCharacters } from '../actions/charactersActions';
+import { fetchCharactersPromise } from '../actions/charactersActions';
 
 export const CharactersContainer = () => {
 
@@ -11,7 +11,7 @@ export const CharactersContainer = () => {
   const loading = useSelector(state => getCharactersLoading(state));
   
   const dispatch = useDispatch();
-  const updateCharacters = () => dispatch(fetchCharacters());
+  const updateCharacters = () => dispatch(fetchCharactersPromise());
 
   const handleClick = () => console.log('clicked!');
 
